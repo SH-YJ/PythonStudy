@@ -1,0 +1,5 @@
+('d:\\python\\lib\\site-packages\\requests-2.23.0-py3.8.egg',
+ None,
+ {'*.pyc', 'EGG-INFO', '*.pyw', '*.pyd', '*.cp38-win_amd64.pyd', '*.py'},
+ 'DATA',
+ [])
