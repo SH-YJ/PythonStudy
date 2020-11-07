@@ -8,16 +8,18 @@ headers ={
     'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.116 Safari/537.36'
 }
 
+
 def getUrl(url):
     try:
-        read = requests.get(url,headers=headers)  #获取url
-        read.raise_for_status()   #状态响应 返回200连接成功
-        read.encoding = read.apparent_encoding  #从内容中分析出响应内容编码方式
-        return read.text   #Http响应内容的字符串，即url对应的页面内容
+        read = requests.get(url, headers=headers)  # 获取url
+        read.raise_for_status()   # 状态响应 返回200连接成功
+        read.encoding = read.apparent_encoding  # 从内容中分析出响应内容编码方式
+        return read.text   # Http响应内容的字符串，即url对应的页面内容
     except :
         return "连接失败！"
 
-def get_sum_page(t_url):  #获取当前页总数
+
+def get_sum_page(t_url):  # 获取当前页总数
     try:
         t_html = getUrl(t_url)
         t_soup = BeautifulSoup(t_html,"html.parser")
@@ -30,7 +32,8 @@ def get_sum_page(t_url):  #获取当前页总数
     except:
         return "访问失败！"
 
-def download_img(x_root,x_src,x_path): #以二进制下载图片
+
+def download_img(x_root,x_src,x_path): # 以二进制下载图片
     try:
         if not os.path.exists(x_root):  # 判断是否存在文件并下载img
             os.mkdir(x_root)
@@ -44,6 +47,7 @@ def download_img(x_root,x_src,x_path): #以二进制下载图片
             print("文件已存在！")
     except :
         print("文件爬取失败！")
+
 
 if __name__ == '__main__':
     html = getUrl("https://www.nvshens.org/gallery/meiguo/")

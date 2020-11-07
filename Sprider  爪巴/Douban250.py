@@ -1,10 +1,7 @@
-import requests
-from bs4 import BeautifulSoup
-import os
 import re
+import requests
 
 
-# 获取网址
 def getUrl(url):
     try:
         read = requests.get(url)  # 获取url
@@ -13,8 +10,3 @@ def getUrl(url):
         return read.text  # Http响应内容的字符串，即url对应的页面内容
     except:
         return "连接失败！"
-
-
-if __name__ == '__main__':
-    html = getUrl('https://www.youtube.com/')
-    print(html)
