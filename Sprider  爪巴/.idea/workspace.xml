@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="douban">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test8.py" beforeDir="false" afterPath="$PROJECT_DIR$/test8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xyz.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/xyz.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -212,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604802559284</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update">
+      <created>1604813384919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1604813384919</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,9 +235,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="update" />
     <MESSAGE value="douban" />
-    <option name="LAST_COMMIT_MESSAGE" value="douban" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="651" y="274" key="#Notifications" timestamp="1598580472570">
@@ -298,10 +304,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="299" y="27" width="996" height="712" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604752723581" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604802563714">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604813388903">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604802563714" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604813388903" />
     <state x="540" y="157" key="any.rule" timestamp="1604755898818">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
