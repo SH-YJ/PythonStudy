@@ -20,7 +20,7 @@ def getUrl(url):
         return
 
 
-def writetoexcel(z):  # 写入excel
+def writetoexcel(x):  # 写入excel
     data = openpyxl.load_workbook('xyz.xlsx')
     # 取第一张表
     wb = data.sheetnames
@@ -29,17 +29,14 @@ def writetoexcel(z):  # 写入excel
     nrows = table.max_row  # 获得行数
     ncolumns = table.max_column  # 获得列数
     # i = old_rows
-    # table.cell(nrows + 1, 1, value=x)  # 写入数据
-    # able.cell(nrows + 1, 2, value=y)
-    table.cell(nrows + 1, 4, value=z)
-    # sheet1.write(i , 0, u)
-    # sheet1.write(i , 1, p)
-    # sheet1.write(i , 2, titles[var])
+    table.cell(nrows + 1, 4, value=x)  # 写入数据
+    # table.cell(nrows + 1, 2, value=y)
+    # table.cell(nrows + 1, 3, value=z)
     data.save('xyz.xlsx')
 
 
 if __name__ == '__main__':
-    html = getUrl("https://2flj.xyz/ziyuans/wp/page/4")
+    html = getUrl("https://2flj.xyz/ziyuans/wp")
     soup = BeautifulSoup(html, "html.parser")
     urls = soup.find('div', class_='row').find_all('a', class_='media-content')
     for url in urls:
