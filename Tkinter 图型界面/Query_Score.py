@@ -7,7 +7,7 @@ import re
 pattern = '[0-9]{8,}'
 
 db = pymysql.Connect(  # 连接mysql
-    host='192.168.0.103',
+    host='localhost',
     port=3306,
     user='syj',
     passwd='syj21408',
@@ -32,7 +32,7 @@ def JudgeTF(user, password):  # 判断输入的用户名密码是否正确
     cursor.close()
 
 
-def Judge_user_Exist(user):  # 判断用户名是否存在
+def Judge_User_Exist(user):  # 判断用户名是否存在
     cursor = db.cursor()
     cursor.execute("select * from ues")
     data = cursor.fetchall()  # 获取所有数据
@@ -43,7 +43,7 @@ def Judge_user_Exist(user):  # 判断用户名是否存在
             return False
 
 
-def Judge_pass(password, sec_password):  # 判断密码是否相同
+def Judge_Pass(password, sec_password):  # 判断密码是否相同
     if re.match(pattern, password) is None:
         messagebox.showinfo("提示", "密码长度不够，至少8位")
         return False
@@ -52,17 +52,17 @@ def Judge_pass(password, sec_password):  # 判断密码是否相同
         return False
 
 
-def Sign_in(n_user, n_password, nn_password):  # 注册账号
+def Sign_In(n_user, n_password, nn_password):  # 注册账号
     cursor = db.cursor()
     sql = "insert into UES(user, password) values(%s, %s)"
-    if Judge_user_Exist(n_user) is not False and Judge_pass(n_password, nn_password) is not False:
+    if Judge_User_Exist(n_user) is not False and Judge_Pass(n_password, nn_password) is not False:
         cursor.execute(sql, [n_user, n_password])
         db.commit()  # 提交到数据库执行
         cursor.close()
         messagebox.showinfo("提示", "注册成功")
 
 
-def Log_in():  # 主界面登录
+def Log_In():  # 主界面登录
     if JudgeTF(entry1.get(), entry2.get()) is True:
         Student()
         messagebox.showinfo("提示", "登录成功！")
@@ -135,7 +135,7 @@ def Sign_Gui():  # 注册界面
 
     # 创建注册按钮
     canvas1.create_window(210, 200, window=Button(sign, width=15, bg='#d37000', text='注册',
-                                                  command=lambda: Sign_in(en1.get(), en2.get(), en3.get())))
+                                                  command=lambda: Sign_In(en1.get(), en2.get(), en3.get())))
     # lambda 有参数函数也不会直接执行
     mainloop()
 
@@ -180,7 +180,7 @@ photo = ImageTk.PhotoImage(img)
 canvas.create_image(350, 350, image=photo)
 
 # 创建登录按钮
-canvas.create_window(250, 200, window=Button(root, width=15, bg='#88CEEB', text='立即登录', command=Log_in))
+canvas.create_window(250, 200, window=Button(root, width=15, bg='#88CEEB', text='立即登录', command=Log_In))
 # 创建注册按钮
 canvas.create_window(100, 200, window=Button(root, width=15, bg='#d37000', text='注册', command=Sign_Gui))
 
