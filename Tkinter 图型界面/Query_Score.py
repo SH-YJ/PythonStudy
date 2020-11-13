@@ -4,7 +4,7 @@ from PIL import ImageTk, Image
 import tkinter.messagebox as messagebox
 import re
 
-pattern = '[0-9]{8,}'
+pattern = '[0-9A-Za-z]{8,}'  # 正则匹配大于等于8位的密码（包括数字字母）
 
 db = pymysql.Connect(  # 连接mysql
     host='localhost',
@@ -93,8 +93,6 @@ def Student():  # 学生界面
     en2.pack()
     canvas1.create_window(350, 50, window=en1)
     canvas1.create_window(350, 80, window=en2)
-    x0, y0, x1, y1 = 0, 0, 120, 120
-    canvas1.create_arc(x0, y0, x1, y1, fill='red')
 
     mainloop()
 
