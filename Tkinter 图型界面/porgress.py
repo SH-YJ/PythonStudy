@@ -1,15 +1,36 @@
-from tkinter import *
-from tkinter.ttk import *
+from threading import Thread
+from time import sleep
+import tkinter
+import tkinter.ttk
 
-root = Tk()
-# 进度条控件的mode参数有两个值，"indeterminate"表示来回反弹样式，"determinate"表示步进样式
-progress1 = Progressbar(root, mode='indeterminate', length=100)
-# 可拉伸
-progress1.pack(side='left', expand=1, fill="both")
-# 需要start函数去启动进度条
-progress1.start()
-progress2 = Progressbar(root, mode='determinate', length=100)
-progress2.pack(side=LEFT, expand=1, fill="both")
-progress2.start()
 
-root.mainloop()
+def on_loading(widget, value, loading_end):
+    print('loading...')
+    widget.start(150)
+    sleep(15)
+    widget.stop()
+    value(100)
+    on_ready()
+
+
+def on_ready():
+    print("now ready to work...")
+
+
+def main():
+    root = tkinter.Tk()
+    ft = tkinter.ttk.Frame()
+    ft.pack(expand=True, fill=tkinter.BOTH, side=tkinter.TOP)
+
+    value = 0  # the value of the progressbar
+    setvalue = lambda x, value=value: value + x  # the lambda to capture value
+    pb_hd = tkinter.ttk.Progressbar(ft, orient='horizontal', mode='determinate', max=100.0, variable=value)
+    pb_hd.pack(expand=True, fill=tkinter.BOTH, side=tkinter.TOP)
+
+    # Creates a thread that call on_loading
+    Thread(target=on_loading, args=(pb_hd, setvalue, on_loading)).start()
+    root.mainloop()
+
+
+if __name__ == '__main__':
+    main()
