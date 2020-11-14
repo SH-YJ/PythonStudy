@@ -73,26 +73,31 @@ def Log_In():  # 主界面登录
 def Student():  # 学生界面
     stu = Toplevel()
     stu.title('学生界面')
-    stu.geometry('700x700')
+    stu.geometry('400x400')
     stu.resizable(0, 0)
-    root.withdraw()  # 实现窗口的隐藏
-    canvas1 = Canvas(stu, width=700, height=700)
-    canvas1.pack()
-
-    # 创建画布背景图
-    imgpath1 = r'pic/3.png'  # 图片绝对路径
-    # imgpath = '5f3757be38934.gif'  当前文件夹下相对路径
-    img1 = Image.open(imgpath1)
-    photo1 = ImageTk.PhotoImage(img1)
-    canvas1.create_image(350, 350, image=photo1)
+    root.withdraw()  # 实现根窗口的隐藏
 
     # 创建控件
     en1 = Entry(stu, insertbackground='orange', highlightthickness=0)
     en1.pack()
     en2 = Entry(stu, insertbackground='orange', highlightthickness=0)
     en2.pack()
-    canvas1.create_window(350, 50, window=en1)
-    canvas1.create_window(350, 80, window=en2)
+    btn = Button(stu, text="查询", relief='raised')
+    btn.pack()
+    t1 = Text(stu, width=50, height=10, relief='flat')
+    t1.pack()
+
+    # 利用db方法创建游标对象
+    cursor = db.cursor()
+
+    # 利用游标对象execute()方法执行SQL命令
+    cursor.execute("select * from score ")
+
+    data = cursor.fetchall()  # 利用游标对象fetchall()方法获取全部内容
+    row = cursor.rowcount
+    for i in range(row):
+        while en1.get() == data[i][0] and en2.get() == data[i][1]:
+            t1.insert(INSERT, data[i][0])
 
     mainloop()
 
