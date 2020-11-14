@@ -2,7 +2,7 @@ from xml.dom.minidom import parse
 import openpyxl
 
 
-def readxml():
+def readxml():  # 读取xml文件
     domTree = parse("web5.xml")
     # 文档根元素
     rootBode = domTree.documentElement
