@@ -42,3 +42,4 @@ if __name__ == '__main__':
     ts.width = input()
     ts.height = input()
     print(ts.lenght, ts.width, ts.height)
+    print('{0},{1},{2:.2f}'.format(1,2,1.0))
