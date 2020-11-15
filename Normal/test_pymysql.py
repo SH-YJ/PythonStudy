@@ -20,7 +20,7 @@ data = cursor.fetchall()  # 利用游标对象fetchall()方法获取全部内容
 for i in range(3):
     print(data[i][0], data[i][1])
 
-# db.commit()  # 提交到数据库执行
+db.commit()  # 提交到数据库执行
 
 cursor.close()
 db.close()

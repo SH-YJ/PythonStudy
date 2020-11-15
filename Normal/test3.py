@@ -3,7 +3,7 @@ import time
 from os import environ
 import tkinter as tk
 import threading
-
+import pygame
 
 def play_music():
     filepath = r"l0qtb-zz95z.mp3"
