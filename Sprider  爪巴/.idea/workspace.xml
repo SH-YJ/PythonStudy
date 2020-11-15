@@ -20,10 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/../Normal/Sprider_doc.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/test5.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/xyz.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/xyz.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Sprider_doc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Sprider_doc.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
