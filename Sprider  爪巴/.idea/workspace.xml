@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change beforePath="$PROJECT_DIR$/../Normal/Sprider_doc.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Sprider_doc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/Thread.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Biquge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/test5.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Class.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,9 +55,9 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="any.rule.ignoreSwayRod" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Tkinter 图型界面" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.mkzhan">
+  <component name="RunManager" selected="Python.Biquge">
     <configuration name="2056" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -69,6 +71,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2056.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Biquge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sprider  爪巴" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Biquge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -119,27 +142,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="new_test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Sprider  爪巴" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/new_test.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test8" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -163,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Biquge" />
         <item itemvalue="Python.mkzhan" />
         <item itemvalue="Python.test8" />
         <item itemvalue="Python.Douban250" />
         <item itemvalue="Python.2056" />
-        <item itemvalue="Python.new_test" />
       </list>
     </recent_temporary>
   </component>
@@ -275,53 +277,64 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="313" y="225" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602987301969" />
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom" timestamp="1605075606909">
+    <state width="724" height="192" key="GridCell.Tab.0.bottom" timestamp="1605448990633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605075606909" />
-    <state width="1493" height="192" key="GridCell.Tab.0.center" timestamp="1605075606909">
+    <state width="724" height="192" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605448990633" />
+    <state width="724" height="192" key="GridCell.Tab.0.center" timestamp="1605448990633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605075606909" />
-    <state width="1493" height="192" key="GridCell.Tab.0.left" timestamp="1605075606909">
+    <state width="724" height="192" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605448990633" />
+    <state width="724" height="192" key="GridCell.Tab.0.left" timestamp="1605448990633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605075606909" />
-    <state width="1493" height="192" key="GridCell.Tab.0.right" timestamp="1605075606909">
+    <state width="724" height="192" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605448990633" />
+    <state width="724" height="192" key="GridCell.Tab.0.right" timestamp="1605448990633">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605075606909" />
-    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1604802575958">
+    <state width="724" height="192" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605448990633" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1605423460226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1604802575958" />
-    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1604802575958">
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605423460226" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1605423460226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1604802575958" />
-    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1604802575958">
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605423460226" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1605423460226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1604802575958" />
-    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1604802575958">
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605423460226" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1605423460226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1604802575958" />
-    <state x="299" y="27" width="996" height="712" key="SettingsEditor" timestamp="1604752723581">
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605423460226" />
+    <state x="299" y="27" width="996" height="712" key="SettingsEditor" timestamp="1605421466777">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="299" y="27" width="996" height="712" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604752723581" />
+    <state x="299" y="27" width="996" height="712" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605421466777" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1604818216793">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1604818216793" />
-    <state x="540" y="157" key="any.rule" timestamp="1604755898818">
+    <state x="540" y="157" key="any.rule" timestamp="1605410174952">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="540" y="157" key="any.rule/0.0.1536.824@0.0.1536.824" timestamp="1604755898818" />
-    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605074909502">
+    <state x="540" y="157" key="any.rule/0.0.1536.824@0.0.1536.824" timestamp="1605410174952" />
+    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605445268432">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605074909502" />
+    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605445268432" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
