@@ -52,15 +52,14 @@ def GetDetailPage(url, articlename):
     everyChapterUrl = []
     for URL in Url:
         everyChapterUrl.append(url + URL)
-    everyChapterUrl.reverse()
-    everyChapterName.reverse()
-    multithreading(everyChapterUrl, articlename, everyChapterName)
+    for x, y in zip(everyChapterUrl,everyChapterName):
+        Download(x, articlename, y)
 
 
 def Download(url, articlename, chaptername):
     time.sleep(1)
     new_html = getUrl(url)
-    html = new_html.replace('<br/>', '')
+    html = new_html.replace('<br/>', ' ')
     soup = BeautifulSoup(html, "lxml")
     content = soup.find('div', id='content')
     root = "D:/BaiduNetdiskDownload/Biquge/" + articlename + '/'
@@ -76,6 +75,7 @@ def Download(url, articlename, chaptername):
         for p in content.text.split(' '):
             doc.add_paragraph(p)
         doc.save(path)
+        print("章节" + chaptername + " 下载完成")
     else:
         print("文件已存在")
     return True
