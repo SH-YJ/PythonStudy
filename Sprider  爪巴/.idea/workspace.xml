@@ -20,6 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
+      <change afterPath="$PROJECT_DIR$/../New_Pro/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../New_Pro/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New_Pro/.idea/New_Pro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../New_Pro/.idea/Buquge.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New_Pro/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../New_Pro/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New_Pro/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../New_Pro/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../New_Pro/Methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../New_Pro/Methods.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Biquge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Biquge.py" afterDir="false" />
     </list>
@@ -275,22 +281,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="313" y="225" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602987301969" />
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1605490582203">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom" timestamp="1605508487445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605490582203" />
-    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1605490582203">
+    <state width="1493" height="216" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605508487445" />
+    <state width="1493" height="216" key="GridCell.Tab.0.center" timestamp="1605508487445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605490582203" />
-    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1605490582203">
+    <state width="1493" height="216" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605508487445" />
+    <state width="1493" height="216" key="GridCell.Tab.0.left" timestamp="1605508487445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605490582203" />
-    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1605490582203">
+    <state width="1493" height="216" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605508487445" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right" timestamp="1605508487445">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605490582203" />
+    <state width="1493" height="216" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605508487445" />
     <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1605423460226">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -319,10 +325,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="157" key="any.rule/0.0.1536.824@0.0.1536.824" timestamp="1605410174952" />
-    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605488672428">
+    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605503546317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605488672428" />
+    <state x="521" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605503546317" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
