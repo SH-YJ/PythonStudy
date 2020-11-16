@@ -60,7 +60,7 @@ def Download(url, articlename, chaptername):
     time.sleep(1)
     new_html = getUrl(url)
     html = new_html.replace('<br/>', ' ')
-    soup = BeautifulSoup(html, "lxml")
+    soup = BeautifulSoup(html, "html.parser")
     content = soup.find('div', id='content')
     root = "D:/BaiduNetdiskDownload/Biquge/" + articlename + '/'
     path = root + chaptername + '.docx'
@@ -71,9 +71,9 @@ def Download(url, articlename, chaptername):
         # 设置字体
         doc.styles['Normal'].font.name = u'楷体'
         doc.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'楷体')
-        doc.styles['Normal'].font.size = Pt(12)
-        for p in content.text.split(' '):
-            doc.add_paragraph(p)
+        doc.styles['Normal'].font.size = Pt(15)
+        content = content.get_text()
+        doc.add_paragraph(content)
         doc.save(path)
         print("章节" + chaptername + " 下载完成")
     else:
