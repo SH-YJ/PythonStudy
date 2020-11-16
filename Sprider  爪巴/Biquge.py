@@ -53,7 +53,7 @@ def GetDetailPage(url, articlename):
     for URL in Url:
         everyChapterUrl.append(url + URL)
     for x, y in zip(everyChapterUrl,everyChapterName):
-        Download(x, articlename, y)
+        multithreading(x, articlename, y)
 
 
 def Download(url, articlename, chaptername):
@@ -64,45 +64,53 @@ def Download(url, articlename, chaptername):
     content = soup.find('div', id='content')
     root = "D:/BaiduNetdiskDownload/Biquge/" + articlename + '/'
     path = root + chaptername + '.docx'
-    if not os.path.exists(root):
-        os.mkdir(root)
-    if not os.path.exists(path):
-        doc = docx.Document()
-        # 设置字体
-        doc.styles['Normal'].font.name = u'楷体'
-        doc.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'楷体')
-        doc.styles['Normal'].font.size = Pt(15)
-        content = content.get_text()
-        doc.add_paragraph(content)
-        doc.save(path)
-        print("章节" + chaptername + " 下载完成")
-    else:
-        print("文件已存在")
-    return True
+    try:
+        if not os.path.exists(root):
+            os.mkdir(root)
+        if not os.path.exists(path):
+            doc = docx.Document()
+            # 设置字体
+            doc.styles['Normal'].font.name = u'楷体'
+            doc.styles['Normal']._element.rPr.rFonts.set(qn('w:eastAsia'), u'楷体')
+            doc.styles['Normal'].font.size = Pt(15)
+            for p in content.text.split(' '):
+                doc.add_paragraph(p)
+            doc.save(path)
+            # print("章节" + chaptername + " 下载完成")
+        else:
+            print("文件已存在")
+        return True
+    except:
+        pass
 
 
-def Main_Download(chapterurl: list, articlename, chaptername: list):
-    while True:
-        if len(chapterurl) == 0:
-            break
-        href = chapterurl.pop()
-        name = chaptername.pop()
+def Main_Download(chapterurl, articlename, chaptername):
+    while JudgeDownloadAll(chaptername, articlename) is False:
         try:
-            if Download(href, articlename, name):
-                print('线程{}正在下载章节{}'.format(threading.current_thread().getName(), name))
+            if Download(chapterurl, articlename, chaptername):
+                print('线程{}正在下载章节{}'.format(threading.current_thread().getName(), chaptername))
+                break
         except Exception as e:
-            print(e)
+            pass
 
 
 def multithreading(chapterurl, articlename, chaptername):
     threading_1 = []
-    for i in range(10):
+    for i in range(1):
         threading1 = threading.Thread(target=Main_Download, args=(chapterurl, articlename, chaptername,))
         threading1.start()
         threading_1.append(threading1)
     for t in threading_1:
         t.join()
-    print('当前线程为{}'.format(threading.current_thread().getName()))
+
+
+def JudgeDownloadAll(chaptername, articlename):
+    root = "D:/BaiduNetdiskDownload/Biquge/" + articlename + '/'
+    docname = root + chaptername + ".docx"
+    if os.path.exists(docname):
+        return True
+    if not os.path.exists(docname):
+        return False
 
 
 if __name__ == '__main__':
