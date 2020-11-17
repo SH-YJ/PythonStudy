@@ -42,6 +42,7 @@ def Search(searchkey):  # 搜索结果
         if x == choose:
             print("你选择的是《" + Article[x] + "》")
             GetDetailPage(Url[x], Article[x])
+    return articleName
 
 
 def GetDetailPage(url, articlename):
@@ -118,7 +119,12 @@ def JudgeDownloadAll(chaptername, articlename):
         return False
 
 
+def thread_it(func, *args):  # 开线程防止卡死
+    t = threading.Thread(target=func, args=args)
+    t.setDaemon(True)
+    t.start()
+
+
 if __name__ == '__main__':
     print("请输入搜索关键字：", end='')
     searchkey = input()
-    Search(searchkey)
