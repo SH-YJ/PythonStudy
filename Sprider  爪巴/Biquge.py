@@ -61,7 +61,7 @@ def GetDetailPage(url, articlename):  # 获得选择的小说的详细界面内�
         if JudgeSpecialChar(a) is True:
             for b in li:
                 t = t.replace(b, '')
-            ReeveryChapterName.append(t)
+        ReeveryChapterName.append(t)
     for x, y in zip(everyChapterUrl, ReeveryChapterName):
         multithreading(x, articlename, y, lenth, count)
         count += 1
@@ -131,9 +131,14 @@ def JudgeSpecialChar(text):  # 判断章节名的特殊字符
     a = re.search(pattern, text)
     if a is not None:
         return True
+    else:
+        return False
 
 
 if __name__ == '__main__':
     print("请输入搜索关键字：", end='')
+    starttime = time.time()
     searchkey = input()
     Search(searchkey)
+    endtime = time.time()
+    print('下载完成，总耗时:%.f秒' % (endtime - starttime))
