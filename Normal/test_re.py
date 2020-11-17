@@ -11,9 +11,16 @@ def Judge(t):
 
 
 # < > / \ | : " * ?
-if Judge(text) is True:
-    t1 = text
-    li = ['<', '>', '/', '\\', ':', '?', '*','"']
-    for i in li:
-        t1 = t1.replace(i, '')
-    print(t1)
+# t1 = text
+# li = ['<', '>', '/', '\\', ':', '?', '*', '"']
+# if Judge(text) is True:
+#     for i in li:
+#         t1 = t1.replace(i, '')
+# print(t1)
+
+if __name__ == '__main__':
+    list1 = ['第三百七十一章 得意', '第三百七十一章  得意','第三百七十一章   得意','第三百七十一章    得意']
+    list2 = []
+    for i in list1:
+        list2.append(i.replace(' ','#'))
+    print(list2)
