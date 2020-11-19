@@ -38,7 +38,7 @@ def Search(searchkey):  # 搜索结果
         i += 1
     print("请输入要下载的小说序号：", end='')
     choose = int(input())
-    for x in range(1, len(Url), 1):
+    for x in range(1, len(Url) + 1, 1):
         if x == choose:
             print("你选择的是《" + Article[x] + "》")
             GetDetailPage(Url[x], Article[x])
