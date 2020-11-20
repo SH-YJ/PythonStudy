@@ -1,5 +1,5 @@
 from turtle import *
-
+import time
 # 设置色彩模式是RGB:
 colormode(255)
 
@@ -21,6 +21,7 @@ penup()
 bk(l)
 pendown()
 fd(l)
+
 
 def draw_tree(l, level):
     global r, g, b
@@ -54,8 +55,11 @@ def draw_tree(l, level):
     # restore the previous pen width
     width(w)
 
-speed("fastest")
 
+speed("fastest")
+starttime = time.time()
 draw_tree(l, 4)
+endtime = time.time()
+print(endtime-starttime)
 
 done()

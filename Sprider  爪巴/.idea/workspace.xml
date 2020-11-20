@@ -20,19 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/../Normal/test_file.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/Student.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Student/Methods.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Buquge/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Buquge/GUI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Turtle  海龟/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Biquge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Biquge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Turtle  海龟/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Turtle  海龟/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Turtle  海龟/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Turtle  海龟/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Turtle  海龟/tree.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Turtle  海龟/tree.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
