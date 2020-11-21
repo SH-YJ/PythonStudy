@@ -1,1 +1,1 @@
-pip install  cryptography -i https://pypi.douban.com/simple
+pip install  selenium -i https://pypi.douban.com/simple
