@@ -20,15 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/../Normal/test_selenium.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/NeteaseCloudMusic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obzhi网.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tesr8.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test8.py" beforeDir="false" afterPath="$PROJECT_DIR$/flj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xyz.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/xyz.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Turtle  海龟/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Turtle  海龟/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../国内镜像下载库.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../国内镜像下载库.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

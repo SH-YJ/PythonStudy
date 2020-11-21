@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<bookstore>
+	<book>
+		<title lang='eng'>syj</title>
+		<price>25</price>
+	</book>
+	<book>
+		<title lang='eng'>SYJ</title>
+		<price>14</price>
+	</book>
+</bookstore>
