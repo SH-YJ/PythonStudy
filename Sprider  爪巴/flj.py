@@ -21,7 +21,7 @@ def getUrl(url):
 
 
 def writetoexcel(x,y,z,a):  # 写入excel
-    data = openpyxl.load_workbook('xyz.xlsx')
+    data = openpyxl.load_workbook('flj.xlsx')
     # 取第一张表
     wb = data.sheetnames
     table = data[wb[0]]
@@ -35,7 +35,7 @@ def writetoexcel(x,y,z,a):  # 写入excel
     table.cell(nrows + 1, 4, value=a)  # 写入数据
     # table.cell(nrows + 1, 2, value=y)
     # table.cell(nrows + 1, 3, value=z)
-    data.save('xyz.xlsx')
+    data.save('flj.xlsx')
 
 
 if __name__ == '__main__':
