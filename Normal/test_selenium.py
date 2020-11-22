@@ -11,7 +11,7 @@ browser.get('https://www.baidu.com/')
 data =  browser.page_source
 print(type(data))
 
-browser.maximize_window()  # 界面最大化
+# browser.maximize_window()  # 界面最大化
 # 网页截屏  此时此刻是存在于百度首页  默认是只截屏一部分
-# browser.save_screenshot('baidu_.png')
+# browser.save_screenshot('baidu.png')
 browser.close()

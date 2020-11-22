@@ -4,12 +4,6 @@ from bs4 import BeautifulSoup
 import os
 import re
 
-'''
-思路：获取网址
-      获取图片地址
-      爬取图片并保存
-'''
-
 
 # 获取网址
 def getUrl(url):
@@ -31,4 +25,4 @@ while True:
     soup = BeautifulSoup(html_url, "html.parser")
     # 通过分析网页内容，查找img的统一父类及属性
     all_page = soup.find('ul', class_='menu').find_all('a')  # img为图片的标签
-    print(all_page[get_title(name1)].string)
+    print(all_page.string)

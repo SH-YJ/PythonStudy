@@ -20,7 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change beforePath="$PROJECT_DIR$/../Normal/test_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_lxml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Biquge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Word_Biquge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Douban250.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Douban250.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NeteaseCloudMusic.py" beforeDir="false" afterPath="$PROJECT_DIR$/Music_Netease.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bs4_使用.py" beforeDir="false" afterPath="$PROJECT_DIR$/bs4_使用.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_flj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/re_使用.py" beforeDir="false" afterPath="$PROJECT_DIR$/re_使用.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test3 Pic plmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pic_plmm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4 Pic tx.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pic_tx.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/write_to_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/write_to_excel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,8 +65,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Buquge" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.NeteaseCloudMusic">
-    <configuration name="Biquge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.Music_Netease">
+    <configuration name="Data_flj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -67,7 +78,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Biquge.py" />
+      <option name="SCRIPT_NAME" value="S:\Desktop\py文件\Sprider  爪巴\Data_flj.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -76,7 +87,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="NeteaseCloudMusic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Music_Netease" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -88,7 +99,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NeteaseCloudMusic.py" />
+      <option name="SCRIPT_NAME" value="S:\Desktop\py文件\Sprider  爪巴\Music_Netease.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -97,7 +108,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="flj (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Pic_tx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,7 +120,28 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flj.py" />
+      <option name="SCRIPT_NAME" value="S:\Desktop\py文件\Sprider  爪巴\Pic_tx.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Word_Biquge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Sprider  爪巴" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="S:\Desktop\py文件\Sprider  爪巴\Word_Biquge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -139,33 +171,12 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test4 Pic tx" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Sprider  爪巴" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test4 Pic tx.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.NeteaseCloudMusic" />
-        <item itemvalue="Python.flj (1)" />
-        <item itemvalue="Python.Biquge" />
-        <item itemvalue="Python.test4 Pic tx" />
+        <item itemvalue="Python.Music_Netease" />
+        <item itemvalue="Python.Data_flj" />
+        <item itemvalue="Python.Word_Biquge" />
+        <item itemvalue="Python.Pic_tx" />
         <item itemvalue="Python.mkzhan" />
       </list>
     </recent_temporary>

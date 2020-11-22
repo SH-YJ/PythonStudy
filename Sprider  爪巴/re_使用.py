@@ -4,8 +4,6 @@ from urllib import request
 import time
 import os
 
-# url
-
 # 模拟浏览器请求资源
 headers = {
     'user-agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.1'

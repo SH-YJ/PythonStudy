@@ -4,12 +4,6 @@ from bs4 import BeautifulSoup
 import os
 import re
 
-'''
-思路：获取网址
-      获取图片地址
-      爬取图片并保存
-'''
-
 
 # 获取网址
 def getUrl(url):

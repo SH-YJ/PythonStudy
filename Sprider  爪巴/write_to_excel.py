@@ -57,4 +57,3 @@ if __name__ == '__main__':
             # sheet1.write(i , 2, titles[var])
             var = var + 1
         data.save('abc.xlsx')
-    data.save('abc.xlsx')
