@@ -20,7 +20,7 @@ def getUrl(url):
         return
 
 
-def writetoexcel(x,y,z,a):  # 写入excel
+def writetoexcel(x, y, z):  # 写入excel
     data = openpyxl.load_workbook('flj.xlsx')
     # 取第一张表
     wb = data.sheetnames
@@ -32,7 +32,7 @@ def writetoexcel(x,y,z,a):  # 写入excel
     table.cell(nrows + 1, 1, value=x)  # 写入数据
     table.cell(nrows + 1, 2, value=y)  # 写入数据
     table.cell(nrows + 1, 3, value=z)  # 写入数据
-    table.cell(nrows + 1, 4, value=a)  # 写入数据
+    # table.cell(nrows + 1, 4, value=a)  # 写入数据
     # table.cell(nrows + 1, 2, value=y)
     # table.cell(nrows + 1, 3, value=z)
     data.save('flj.xlsx')
@@ -46,8 +46,10 @@ if __name__ == '__main__':
         i = url['href']
         html2 = getUrl(i)
         soup2 = BeautifulSoup(html2, "html.parser")
-        dizhi = re.findall('<div class="col-6 col-md-7">(.*?)</div>', html2)
-        code = re.findall('<div class="col-2 col-md-2" style=".*?">(.*?)</div>', html2)
-        name = re.findall('<div class="site-name h3 my-3">(.*?)</div>', html2)
-        jieya = re.findall('<span style="color: #ff0000;">(.*?)</span>', html2)
-        print(dizhi[1],code[1],name[0],jieya[0])
+        dizhi1 = re.findall('<div class="col-6 col-md-7">(.*?)</div>', html2)  # 百度网盘地址
+        dizhi2 = re.findall('<a class="btn btn-danger custom_btn-d py-0 px-1 mx-auto down_count text-sm" href="(.*?)" target="_blank" data-id=".*?" data-action="down_count" data-mmid="down-mm-1">.*?</a>', html2)  # 黑料姬网盘地址
+        code = re.findall('<div class="col-2 col-md-2" style=".*?">(.*?)</div>', html2)  # 提取码
+        name = re.findall('<div class="site-name h3 my-3">(.*?)</div>', html2)  # 文件名
+        jieya = re.findall('<span style="color: #ff0000;">(.*?)</span>', html2)  # 解压回复数字
+        # print(dizhi1[1], name[0], jieya[0])
+        print(dizhi2)
