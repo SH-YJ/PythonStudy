@@ -26,22 +26,28 @@ def Search(searchkey):  # 搜索结果
     author = re.findall('<td class="odd">([\u4E00-\u9FA5]+)</td>', html)  # 作者名称
     latestChapter = re.findall('<a href="/[0-9]{1,}_[0-9]{2,}/[0-9]+.html" target="_blank">(.*?)</a>', html)  # 最新章节
     internetSite = re.findall('<a href="(/[0-9]{1,}_[0-9]{2,}/)">.*?</a>', html)  # 具体网址
-    print("搜索结果如下:")
-    Url = {}
-    Article = {}
-    i = 1
-    for a, b, c, d in zip(articleName, author, internetSite, latestChapter):
-        print('({num}).《{name:<{len}}\t作者：{auth:<{len}}\t最新章节：{chapter}'.format(num=i, name=a + '》', auth=b, chapter=d,
-                                                                                len=22 - len(a.encode('GBK')) + len(a)))
-        Url.setdefault(i, "http://www.biquge.info/" + c)  # 将网址与数字加入Url字典
-        Article.setdefault(i, a)  # 将文章名与数字加入Article字典
-        i += 1
-    print("请输入要下载的小说序号：", end='')
-    choose = int(input())
-    for x in range(1, len(Url), 1):
-        if x == choose:
-            print("你选择的是《" + Article[x] + "》")
-            GetDetailPage(Url[x], Article[x])
+    spacelist = []  # 空列表
+    if articleName != spacelist:  # 判断是否有搜索结果
+        print("搜索结果如下:")
+        Url = {}
+        Article = {}
+        i = 1
+        for a, b, c, d in zip(articleName, author, internetSite, latestChapter):
+            print('({num}).《{name:<{len}}\t作者：{auth:<{len}}\t最新章节：{chapter}'.format(num=i, name=a + '》', auth=b, chapter=d,
+                                                                                    len=22 - len(a.encode('GBK')) + len(a)))
+            Url.setdefault(i, "http://www.biquge.info/" + c)  # 将网址与数字加入Url字典
+            Article.setdefault(i, a)  # 将文章名与数字加入Article字典
+            i += 1
+        print("请输入要下载的小说序号：", end='')
+        choose = int(input())
+        for x in range(1, len(Url), 1):
+            if x == choose:
+                print("你选择的是《" + Article[x] + "》")
+                GetDetailPage(Url[x], Article[x])
+        return True
+    else:
+        print("暂无搜索结果！")
+        return False
 
 
 def GetDetailPage(url, articlename):  # 获得选择的小说的详细界面内容
@@ -118,7 +124,7 @@ def multithreading(chapterurl, articlename, chaptername, length, count):  # 多�
 
 
 def JudgeDownloadAll(chaptername, articlename):  # 判断是否下载所有章节
-    root = "D:/BaiduNetdiskDownload/Biquge/" + articlename + '/'
+    root = "D:/BaiduNetdiskDownload/Biquge/" + articlename + '/'  # 下载路径
     docname = root + chaptername + ".docx"
     if os.path.exists(docname):
         return True
@@ -139,6 +145,7 @@ if __name__ == '__main__':
     print("请输入搜索关键字：", end='')
     starttime = time.time()
     searchkey = input()
-    Search(searchkey)
+    judge = Search(searchkey)
     endtime = time.time()
-    print('下载完成，总耗时:%.f秒' % (endtime - starttime))
+    if judge == True:
+        print('下载完成，总耗时:%.f秒' % (endtime - starttime))

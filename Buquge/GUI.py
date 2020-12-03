@@ -2,6 +2,14 @@ import tkinter as tk
 from PIL import ImageTk, Image
 import tkinter.font as tkFont
 from Methods import *
+import threading
+
+
+def thread_it(fun, *args):
+    thread = threading.Thread(target=fun, args=args)
+    thread.setDaemon(True)
+    thread.start()
+
 
 root = tk.Tk()  # 设置根目录
 root.resizable(0, 0)  # 设置窗口大小不可变
@@ -22,7 +30,7 @@ Ft_Kai = tkFont.Font(family='楷体', size=20, weight=tkFont.BOLD)  # 楷体加�
 entry1 = tk.Entry(root, insertbackground='blue', highlightthickness=2)
 entry1.pack()
 canvas.create_window(350, 10, width=150, height=25, window=entry1)
-btn1 = tk.Button(root, text='搜索', font=Ft_Kai, command=lambda: Search(searchkey=entry1.get()))
+btn1 = tk.Button(root, text='搜索', font=Ft_Kai, command=lambda: thread_it(Search,entry1.get()))
 btn1.pack()
 canvas.create_window(350, 40, width=100, height=40, window=btn1)
 
