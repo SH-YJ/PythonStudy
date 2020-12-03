@@ -20,29 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/../JavDB/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavDB/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavDB/Actors.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavDB/Torrent.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../JavDB/Works.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/torrent.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Buquge/GUI.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Buquge/GUI.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Buquge/Methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Buquge/Methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JavDB/Actors_Month.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavDB/Actors.py" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/Actors.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Normal/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Word_Biquge.py" beforeDir="false" afterPath="$PROJECT_DIR$/Word_Biquge.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flj.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flj.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/Student.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/JavDB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/dbnavigator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Student/Methods.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Turtle  海龟/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Turtle  海龟/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

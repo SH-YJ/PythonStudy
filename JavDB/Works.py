@@ -98,7 +98,7 @@ def Fetch_url(kind, page):  # 抓取演员详情地址
 
 def Create(table):  # 创建单个演员作品表
     cursor = conn.cursor()
-    table = table.replace(' ', '')  # 去空格，欧美名有空格会导致创表失败
+    table = table.replace(' ', '-')  # 去空格，欧美名有空格会导致创表失败
     create_sql = "create table {}" \
                  "(" \
                  "id int unsigned not null auto_increment primary key," \

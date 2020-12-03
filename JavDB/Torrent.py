@@ -19,31 +19,42 @@ glock = threading.Lock()
 table_sql = {'有码': 'actors', '无码': 'uncensored', '欧美': 'western'}
 
 
+def JudgeDownloadAll(kind, name, id, pic: list):  # 判断是否下载所有章节
+    root = "D:/JavDB/Preview/{}/{}/{}/".format(kind, name, id)  # 下载路径
+    sum = 0
+    for i in pic:
+        path = root + i.split('/')[-1]
+        if os.path.exists(path):
+            sum += 1
+    if sum == len(pic):
+        return True
+
+
 def download_pic(id, pic: list, name, kind):  # 下载预览图
     root = "D:/JavDB/Preview/{}/{}/{}/".format(kind, name, id)  # 保存的路径
     while True:
-        glock.acquire()
-        if len(pic) == 0:
-            glock.release()
-            continue
+        # glock.acquire()
+        if JudgeDownloadAll(kind, name, id, pic) is True:
+            # glock.release()
+            break
         else:
-            img = pic.pop()
-            glock.release()
-            path1 = root + img.split('/')[-1]  # 预览图路径
-            print(path1)
-            try:
-                if not os.path.exists(root):  # 判断文件夹是否存在
-                    os.makedirs(root)  # 创建多级目录
-                if not os.path.exists(path1):  # 判断图片是否存在
-                    read = requests.get(img)
-                    with open(path1, "wb")as f:
-                        f.write(read.content)
-                        f.close()
-                        print("文件保存成功！")
-                else:
-                    pass
-            except:
-                print("文件爬取失败！")
+            for img in pic:
+                # glock.release()
+                path1 = root + img.split('/')[-1]  # 预览图路径
+                print(path1)
+                try:
+                    if not os.path.exists(root):  # 判断文件夹是否存在
+                        os.makedirs(root)  # 创建多级目录
+                    if not os.path.exists(path1):  # 判断图片是否存在
+                        read = requests.get(img)
+                        with open(path1, "wb")as f:
+                            f.write(read.content)
+                            f.close()
+                            print("文件保存成功！")
+                    else:
+                        pass
+                except:
+                    print("文件爬取失败！")
 
 
 def w_torrent_txt(id, torrentlist: list, title, capacitylist: list, name, kind):  # 将种子写入txt
@@ -149,4 +160,5 @@ if __name__ == '__main__':
         s += 1
     print('输入你选择的序号：', end='')
     choose = int(input())
+    print('您选择的是：' + a_list[choose-1])
     Main_Down(Fetch_URL(a_dict[choose]), Fetch_ID(a_dict[choose]), a_dict[choose], kind)

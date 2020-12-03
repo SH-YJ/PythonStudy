@@ -9,7 +9,7 @@ conn = pymysql.Connect(
     user='syj',
     passwd='syj21408',
     database='javdb',
-    charset='gb2312'
+    charset='utf8'
 )
 
 if __name__ == '__main__':
@@ -18,8 +18,10 @@ if __name__ == '__main__':
     create_sql = "create table {}" \
           "(" \
           "id int unsigned not null auto_increment primary key," \
-          "UID varchar(255) not null," \
-          "URL varchar(255) not null" \
+          "我 varchar(255) not null," \
+          "十大 varchar(255) not null" \
           ");"
+    sql = "insert ignore into 高崎聖子(UID, URL) value('MIDE-862', 'https://javdb6.com/v/mP8g5')"
     cursor.execute(create_sql.format(table))
     conn.commit()
+
