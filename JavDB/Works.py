@@ -16,10 +16,10 @@ conn = pymysql.Connect(
     database='javdb',
     charset='utf8'
 )
-table_sql = {'有码': 'actors', '无码': 'uncensored', '欧美': 'western'}
+table_sql = {'有码': 'actors', '无码': 'uncensored', '欧美': 'western', '演员月榜': 'actors_month', '收藏': 'actors_collection'}
 # 每一个类型的作品的class不一样需要用字典对应
-work_dict = {'有码': '', '无码': ' horz-cover', '欧美': ' horz-cover'}
-id_dict = {'有码': 'uid', '无码': 'uid', '欧美': 'video-title2'}
+work_dict = {'有码': '', '无码': ' horz-cover', '欧美': ' horz-cover', '演员月榜': '', '收藏': ''}
+id_dict = {'有码': 'uid', '无码': 'uid', '欧美': 'video-title2', '演员月榜': 'uid', '收藏': 'uid'}
 
 
 def download_pic(id, img, name, kind):  # 下载封面图
@@ -65,6 +65,7 @@ def Main_Down(tablename, url, kind, ad, ac):  # 主下载函数
     sql = "insert into {}(UID, URL) value(%s, %s)".format(tablename)
     for i in range(len(works)):
         works[i] = works[i].get_attribute('href')  # 所有作品的地址
+        print('数据写入中~~~~~~')
         cursor.execute(sql, [id[i], works[i]])
         conn.commit()
     browser.close()
@@ -77,8 +78,11 @@ def Fetch_name(kind, page):  # 抓取所有演员名字
     data = cursor1.fetchall()
     Actor_name = []
     sum = 1
-    for i in range(page * 50):
-        Actor_name.append(data[i][0])
+    for i in range((page - 1) * 50, page * 51):
+        try:
+            Actor_name.append(data[i][0])
+        except:
+            pass
     for x in Actor_name:
         print('(%d)%s' % (sum, x))
         sum += 1
@@ -91,8 +95,11 @@ def Fetch_url(kind, page):  # 抓取演员详情地址
     cursor1.execute(sql)
     data = cursor1.fetchall()
     Url_list = []
-    for i in range(page * 50):
-        Url_list.append(data[i][0] + '?page={}&t=s')
+    for i in range((page - 1) * 50, page * 51):  # 每次只展示50或小宇50个演员
+        try:  # 最后演员少于50时，会报错，所以使用try
+            Url_list.append(data[i][0] + '?page={}&t=s')
+        except:
+            pass
     return Url_list
 
 
@@ -106,6 +113,13 @@ def Create(table):  # 创建单个演员作品表
                  "URL varchar(255) not null" \
                  ");"
     cursor.execute(create_sql.format(table))
+    conn.commit()
+
+
+def Clear(tablename):  # 把表清空，只要更新一次，就会导致插入大量重复数据
+    cursor = conn.cursor()
+    sql = 'truncate table {}'.format(tablename)
+    cursor.execute(sql)
     conn.commit()
 
 
@@ -125,10 +139,16 @@ if __name__ == '__main__':
         s += 1
     print('输入你选择的序号：', end='')
     choose = int(input())
+    print('您选择的是：' + a_list[choose - 1])
     try:
         Create(a_dict[choose])
     except:
         print("表已经存在")
     finally:
+        print('请问是否需要清空表（若是二次写入，建议清表，会有大量重复数据写入！）Y/N？')
+        judge = input()
+        if judge == 'Y' or judge == 'y':
+            Clear(a_dict[choose])
+            print('表已经清空！')
         for i in range(1, 30):
             Main_Down(a_dict[choose].replace(' ', ''), u_dict[choose].format(i), kind, id_dict[kind], work_dict[kind])
