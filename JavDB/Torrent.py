@@ -211,8 +211,11 @@ def Fetch_name(kind, page):
     data = cursor1.fetchall()
     Actor_name = []
     sum = 1
-    for i in range(page * 50):
-        Actor_name.append(data[i][0])
+    try:
+        for i in range((page - 1) * 50, page * 51):
+            Actor_name.append(data[i][0])
+    except:
+        pass
     for x in Actor_name:
         print('(%d)%s' % (sum, x))
         sum += 1
