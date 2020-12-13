@@ -61,7 +61,7 @@ head = tkinter.Tk()
 head.title("爬取头像")
 head.geometry("400x400")
 head.resizable(0, 0)
-head.iconbitmap('5f4226701e4e0.128px.ico')
+head.iconbitmap('pic/1.ico')
 
 label1 = tkinter.Label(head, text="输入地址:", fg="pink", bg="gray", width=9, height=1, font=("黑体", 15), justify="left",
                        anchor="w")
@@ -74,7 +74,7 @@ label3 = tkinter.Label(head, text="输入保存路径:", fg="Wheat", bg="LimeGre
                        justify="left", anchor="w")
 label3.pack()
 
-entry3 = tkinter.Entry(head, width=50)
+entry3 = tkinter.Entry(head, width=50,text="sbsdad")
 entry3.pack()
 
 button = tkinter.Button(head, text="获取图片", bg="orange", fg="purple", command=lambda: thread_it(download)).pack()

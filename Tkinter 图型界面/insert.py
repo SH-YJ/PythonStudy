@@ -11,7 +11,7 @@ db = pymysql.Connect(  # 连接mysql
 
 cursor = db.cursor()
 
-sql = "insert into UES values(%s,%s)"
+sql = "insert into ues values(%s,%s)"
 data = ('asd', '123456')
 
 cursor.execute(sql , data)

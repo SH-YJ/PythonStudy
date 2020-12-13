@@ -21,7 +21,7 @@ def JudgeTF(user, password):  # 判断输入的用户名密码是否正确
     cursor = db.cursor()
 
     # 利用游标对象execute()方法执行SQL命令
-    cursor.execute("select * from ues ")
+    cursor.execute("select * from ues")
 
     data = cursor.fetchall()  # 利用游标对象fetchall()方法获取全部内容
     row = cursor.rowcount
