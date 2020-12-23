@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 import os
 import random
+import traceback
 
 conn = pymysql.Connect(
     host='localhost',
@@ -111,5 +112,4 @@ def download_video(url):
 
 
 if __name__ == '__main__':
-    url = 'https://v.tongwangjs.com/api/videoplay/28a5d5edbefb6c9e30d2643fdd1ccc7ee8b6216d.mp4?sign=3e27f939a10464aa567037a311b34745-time=1607250205-user=wanmeikk'
-    download_video(url)
+    pass

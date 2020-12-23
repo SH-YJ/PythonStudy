@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/Pic_98tang.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/test_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_random.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -66,15 +66,18 @@ head.iconbitmap('pic/1.ico')
 label1 = tkinter.Label(head, text="输入地址:", fg="pink", bg="gray", width=9, height=1, font=("黑体", 15), justify="left",
                        anchor="w")
 label1.pack()
-
-entry1 = tkinter.Entry(head, width=50)
+txt2 = tkinter.StringVar()
+entry1 = tkinter.Entry(head, width=50, textvariable=txt2)
+txt2.set('https://www.woyaogexing.com/touxiang/')  # 设置默认值
 entry1.pack()
 
 label3 = tkinter.Label(head, text="输入保存路径:", fg="Wheat", bg="LimeGreen", width=13, height=1, font=("黑体", 15),
                        justify="left", anchor="w")
 label3.pack()
 
-entry3 = tkinter.Entry(head, width=50,text="sbsdad")
+txt1 = tkinter.StringVar()
+entry3 = tkinter.Entry(head, width=50, textvariable=txt1)
+txt1.set('S:/Nan/')
 entry3.pack()
 
 button = tkinter.Button(head, text="获取图片", bg="orange", fg="purple", command=lambda: thread_it(download)).pack()

@@ -20,8 +20,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6ea708c6-a0f7-4da9-9efe-8ab4e5b99975" name="默认的" comment="">
-      <change beforePath="$PROJECT_DIR$/../Buquge/Methods.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Buquge/Methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/1.6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/3.7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/4.8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/4.9.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/5.4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/5.5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/5.6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/5.7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/5.8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/6.8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/8.5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/test_except.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavDB/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/test_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_random.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/xyz.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/xyz.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Sprider  爪巴/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Sprider  爪巴/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprider  爪巴/debug.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprider  爪巴/flj.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Sprider  爪巴/flj.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Sprider  爪巴/torrent.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/.name" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
