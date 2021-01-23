@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "S:/Desktop/py文件/Normal/Test/test_except.py", line 6, in <module>
+    print(l1[9])
+TypeError: 'set' object is not subscriptable

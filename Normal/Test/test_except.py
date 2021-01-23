@@ -5,5 +5,5 @@ if __name__ == '__main__':
         l1 = {1, 2, 4}
         print(l1[9])
     except Exception as e:
-        file = open('aa.txt', 'w', encoding='utf-8')
+        file = open('Source/异常.txt', 'w', encoding='utf-8')
         traceback.print_exc(file=file)  # 将异常写入文件中

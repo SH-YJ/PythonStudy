@@ -51,5 +51,4 @@ if __name__ == '__main__':
         code = re.findall('<div class="col-2 col-md-2" style=".*?">(.*?)</div>', html2)  # 提取码
         name = re.findall('<div class="site-name h3 my-3">(.*?)</div>', html2)  # 文件名
         jieya = re.findall('<span style="color: #ff0000;">(.*?)</span>', html2)  # 解压回复数字
-        # print(dizhi1[1], name[0], jieya[0])
-        print(dizhi2)
+        print(dizhi1[1], name[0], jieya[0])

@@ -20,9 +20,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change beforePath="$PROJECT_DIR$/../Normal/test_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/test_random.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test_random.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/10.4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/10.5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/10.7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/8.2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/Visual_Data/AC_Data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Tkinter 图型界面/URL.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavDB/Actors_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/Actors_collection.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavDB/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/NYNU/9.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/NYNU/9.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Source/5f38e8f147726.64px.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Source/as.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Source/book.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Source/web5.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Source/xyz.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Test/test_except.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Test/test_except.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Test/test_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Test/test_lxml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Visual_Data/render.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Visual_Data/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Visual_Data/test1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Visual_Data/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Visual_Data/test2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/debug.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_Douban250.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Douban250.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data_flj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_flj.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pic_98tang.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pic_98tang.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/douban.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/douban.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flj.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flj.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/.name" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +84,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Buquge" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.Pic_98tang">
+  <component name="RunManager" selected="Python.Data_flj">
     <configuration name="Data_Actors" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -78,7 +106,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Data_JavDB" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Data_Douban250" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,7 +118,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_JavDB.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Douban250.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -99,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Data_Torrent" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Data_flj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider  爪巴" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -111,7 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_Torrent.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Data_flj.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,11 +192,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Data_flj" />
+        <item itemvalue="Python.Data_Douban250" />
         <item itemvalue="Python.Pic_98tang" />
         <item itemvalue="Python.Pic_weibo1" />
         <item itemvalue="Python.Data_Actors" />
-        <item itemvalue="Python.Data_JavDB" />
-        <item itemvalue="Python.Data_Torrent" />
       </list>
     </recent_temporary>
   </component>

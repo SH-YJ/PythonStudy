@@ -52,4 +52,4 @@ if __name__ == '__main__':
             table.cell(nrows+1, 3, value=k)
             nrows = nrows + 1
         data.save('douban.xlsx')
-        time.sleep()
+        time.sleep(1)

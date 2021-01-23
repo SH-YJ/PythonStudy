@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "S:/Desktop/py文件/Normal/test.py", line 117, in <module>
-    print(list[9])
-TypeError: 'set' object is not subscriptable

@@ -22,16 +22,9 @@ if __name__ == '__main__':
                 'e', 'd', 'c', 'b', 'a', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', 'Z', 'Y', 'X', 'W', 'V', 'U',
                 'T', 'S', 'R', 'Q', 'P', 'O', 'N', 'M', 'L', 'K', 'J', 'I', 'H', 'G', 'F', 'E', 'D', 'C', 'B', 'A', '!',
                 '@', '#', '$', '%', '^', '&', '*', '(', ')']
-    sum = 0
-    starttime = time.time()
     rnd = '%d' % (random.random() * 100000)
     print(rnd)
-    while sum <= 1000000:
-        str = ''.join(random.sample(str_list, 10))
-        sum += 1
-        if sum == rnd:
-            file = open('随机.txt', 'w', encoding='utf-8')
-            file.write(str + '\n')
-            file.close()
-    endtime = time.time()
-    print(endtime - starttime)
+    str = ''.join(random.sample(string.ascii_letters + string.digits, 16))
+    file = open('Source/随机字符.txt', 'a', encoding='utf-8')
+    file.write(str + '\n')
+    file.close()
