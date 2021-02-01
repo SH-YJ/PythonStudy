@@ -20,37 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/10.4.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/10.5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/10.7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/11.8.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/NYNU/8.2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/Visual_Data/AC_Data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tkinter 图型界面/URL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/Actors_collection.py" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/Actors_collection.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/../JavDB/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/NYNU/9.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/NYNU/9.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Source/5f38e8f147726.64px.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Source/as.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Source/book.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Source/web5.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Source/xyz.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Test/test_except.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Test/test_except.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Test/test_lxml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Test/test_lxml.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Visual_Data/render.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Visual_Data/test1.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Visual_Data/test1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Visual_Data/test2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Visual_Data/test2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/debug.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_Douban250.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_Douban250.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data_flj.py" beforeDir="false" afterPath="$PROJECT_DIR$/Data_flj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pic_98tang.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pic_98tang.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/douban.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/douban.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/Test/File_Size.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Normal/Test/牧场.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Normal/Study/List.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Study/List.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flj.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/flj.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/.name" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

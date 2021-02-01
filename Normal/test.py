@@ -19,18 +19,6 @@ conn = pymysql.Connect(
 )
 
 
-def create(table):
-    cursor = conn.cursor()
-    create_sql = "create table {}" \
-                 "(" \
-                 "id int unsigned not null auto_increment primary key," \
-                 "UID varchar(255) not null," \
-                 "URL varchar(255) not null" \
-                 ");"
-    cursor.execute(create_sql.format(table))
-    conn.commit()
-
-
 def Handler(start, end, url, filename, headers=None):
     if headers is None:
         headers = {}
