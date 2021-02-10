@@ -2,12 +2,8 @@ import pymysql
 import requests
 import datetime
 import threading
-import time
-from bs4 import BeautifulSoup
-from selenium import webdriver
-import os
-import random
-import traceback
+import time,re
+
 
 conn = pymysql.Connect(
     host='localhost',
@@ -100,4 +96,5 @@ def download_video(url):
 
 
 if __name__ == '__main__':
-    pass
+    a = re.match('AcC', 'aBc', re.IGNORECASE)
+    print(bool(a))

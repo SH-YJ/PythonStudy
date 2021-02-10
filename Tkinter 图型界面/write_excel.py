@@ -1,9 +1,6 @@
 # -- coding:UTF-8 --
-import tkinter
-import openpyxl
-import os
+import tkinter, openpyxl, os, threading
 from openpyxl import workbook
-import threading
 import tkinter.messagebox as messagebox
 
 
@@ -23,7 +20,9 @@ def writetoexcel(x):  # 写入excel
     data.save('abc.xlsx')
 
 
-def sheet_method(work_book, add_sheet=[]):  # 创建excel中的表
+def sheet_method(work_book, add_sheet=None):  # 创建excel中的表
+    if add_sheet is None:
+        add_sheet = []
     wk = work_book
     ss_sheet = wk['Sheet']
     ss_sheet.title = add_sheet[0]
@@ -35,7 +34,9 @@ def sheet_method(work_book, add_sheet=[]):  # 创建excel中的表
     wk.active = sheet_index
 
 
-def create_excel(filename="filename.xlsx", recreate=False, add_sheet=[]):  # 创建excel
+def create_excel(filename="filename.xlsx", recreate=False, add_sheet=None):  # 创建excel
+    if add_sheet is None:
+        add_sheet = []
     path = os.path.join(os.getcwd() + '\\' + filename + ".xlsx")
     p1 = os.path.exists(path)
     if p1:

@@ -19,7 +19,7 @@ def getUrl(url):
 while True:
     os.system('cls')
     S_page = input("输入第几页:")
-    a_html_url = getUrl("https://www.taotuxp.com/xinggan/page/" + str(S_page))
+    a_html_url = getUrl("urlname" + str(S_page))
     sum_url = re.findall('<a href="(.*?)" class=".*?" target=".*?">', a_html_url)  # 获取一网页12个网址
     for s_url in sum_url:
         html_urls = getUrl(s_url)
