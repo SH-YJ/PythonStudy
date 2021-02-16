@@ -20,39 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5c8e19d-18df-4f45-90b7-06ad2e6850c4" name="默认的" comment="update">
-      <change afterPath="$PROJECT_DIR$/../Normal/SMTP/random_num.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/SMTP/sendemail.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/Socket/client.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/Socket/sever.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Normal/Test/支付宝隐藏福卡.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Stu_Mgr/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/JavDB.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/Actors.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/Actors_Month.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/Actors_collection.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/Torrent.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../JavDB/Works.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Study/List.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Test/Source/牧场账号密码.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Test/Source/牧场账号密码.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/Test/牧场.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/Test/牧场.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Normal/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Normal/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Sprider  爪巴.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Sprider.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pic_plmm.py" beforeDir="false" afterPath="$PROJECT_DIR$/Pic_plmm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/dataSources/b26422bd-d0a9-40eb-965e-ebc73eb33b9d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/.idea/dataSources/b26422bd-d0a9-40eb-965e-ebc73eb33b9d/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/Query_Score.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tkinter 图型界面/write_excel.py" beforeDir="false" afterPath="$PROJECT_DIR$/../Tkinter 图型界面/write_excel.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../打包完成的软件/牧场/Source/牧场账号密码.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../打包完成的软件/牧场/Source/牧场账号密码.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../打包完成的软件/牧场/牧场.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../打包完成的软件/牧场/牧场.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,43 +53,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="any.rule.ignoreSwayRod" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Buquge" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.Data_flj">
-    <configuration default="true" type="DjangoTestsConfigurationType">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="" />
-      <option name="SETTINGS_FILE" value="" />
-      <option name="CUSTOM_SETTINGS" value="false" />
-      <option name="USE_OPTIONS" value="false" />
-      <option name="OPTIONS" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="ADDITIONAL_ARGS" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="Data_Actors" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Sprider" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,121 +167,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Python.FlaskServer">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Unittests">
-      <module name="Sprider" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Data_flj" />
@@ -370,6 +191,8 @@
       <workItem from="1612264854663" duration="22000" />
       <workItem from="1612855561927" duration="191000" />
       <workItem from="1612965962567" duration="18000" />
+      <workItem from="1613007778593" duration="7000" />
+      <workItem from="1613007799746" duration="9000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1604749786733</created>

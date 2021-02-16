@@ -942,5 +942,9 @@ SELECT|sys.sys_config
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
+    <column id="293" parent="286" name="Email">
+      <Position>3</Position>
+      <DataType>varchar(255)|0s</DataType>
+    </column>
   </database-model>
 </dataSource>

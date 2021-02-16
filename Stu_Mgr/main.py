@@ -28,6 +28,9 @@ def thread_it(func, *args):  # 开线程防止卡死
 
 def mail(receiver):
     content = '<p><h3>您的验证码为：</h3></p></p><h1>{}</h1></p>'.format(ver_code)
+    if Judge_Email_Exist(receiver) is False:
+        messagebox.showinfo('提示', '该邮箱已被注册！')
+        return None
     try:
         msg = MIMEText(content, 'html', 'utf-8')  # # 第一个为文本内容，第二个 plain 设置文本格式，第三个 utf-8 设置编码
         msg['From'] = formataddr(("SH_YJ", sender))  # 括号里的对应发件人邮箱昵称、发件人邮箱账号
@@ -65,14 +68,14 @@ def JudgeTF(user, password):  # 判断输入的用户名密码是否正确
     cursor.close()
 
 
-def Judge_User_Exist(user):  # 判断用户名是否存在
+def Judge_Email_Exist(email):  # 判断邮箱是否注册
     cursor = db.cursor()
     cursor.execute("select * from ues")
     data = cursor.fetchall()  # 获取所有数据
     row = cursor.rowcount  # 获取数据行数
     for i in range(row):
-        while data[i][0] == user:
-            messagebox.showinfo("提示", "用户名已存在！")
+        while data[i][2] == email:
+            messagebox.showinfo("提示", "该邮箱已被注册！")
             return False
 
 
@@ -85,12 +88,12 @@ def Judge_Pass(password, sec_password):  # 判断密码是否相同
         return False
 
 
-def Sign_In(n_user, n_password, nn_password, n_code):  # 注册账号
+def Sign_In(n_user, n_email, n_password, nn_password, n_code):  # 注册账号
     cursor = db.cursor()
-    sql = "insert into UES(user, password) values(%s, %s)"
-    if Judge_User_Exist(n_user) is not False and Judge_Pass(n_password, nn_password) is not False and Judge_ver_code(
+    sql = "insert into UES(user, password, Email) values(%s, %s, %s)"
+    if Judge_Email_Exist(n_email) is not False and Judge_Pass(n_password, nn_password) is not False and Judge_ver_code(
             ver_code, n_code) is not False:
-        cursor.execute(sql, [n_user, n_password])
+        cursor.execute(sql, [n_user, n_password, n_email])
         db.commit()  # 提交到数据库执行
         cursor.close()
         messagebox.showinfo("提示", "注册成功")
@@ -131,10 +134,9 @@ def Student():  # 学生界面
     data = cursor.fetchall()  # 利用游标对象fetchall()方法获取全部内容
     row = cursor.rowcount
     for i in range(row):
-        while en1.get() == data[i][0] and en2.get() == data[i][1]:
-            t1.insert(INSERT, data[i][0])
+        t1.insert('end', data[i][0] + '\n')
 
-    mainloop()
+    stu.mainloop()
 
 
 def Sign_Gui():  # 注册界面
@@ -148,13 +150,13 @@ def Sign_Gui():  # 注册界面
     en1 = Entry(sign, insertbackground='orange', highlightthickness=0)
     en1.pack()
 
-    en2 = Entry(sign, insertbackground='orange', highlightthickness=0, show='*')
+    en2 = Entry(sign, insertbackground='orange', highlightthickness=0)
     en2.pack()
 
     en3 = Entry(sign, insertbackground='orange', highlightthickness=0, show='*')
     en3.pack()
 
-    en4 = Entry(sign, insertbackground='orange', highlightthickness=0)
+    en4 = Entry(sign, insertbackground='orange', highlightthickness=0, show='*')
     en4.pack()
 
     en5 = Entry(sign, insertbackground='orange', highlightthickness=0)
@@ -169,23 +171,23 @@ def Sign_Gui():  # 注册界面
     canvas1.create_window(100, 160, window=Label(sign, font=('宋体', 10), text='验证码:', justify='left', padx=5, pady=4))
     # 账号密码输入框
     canvas1.create_window(210, 40, window=en1)
-    canvas1.create_window(210, 70, window=en4)
-    canvas1.create_window(210, 100, window=en2)
-    canvas1.create_window(210, 130, window=en3)
+    canvas1.create_window(210, 70, window=en2)
+    canvas1.create_window(210, 100, window=en3)
+    canvas1.create_window(210, 130, window=en4)
     canvas1.create_window(210, 160, window=en5)
 
     # 创建画布背景图
     imgpath1 = 'Source/2.png'  # 图片绝对路径
-    # imgpath = '5f3757be38934.gif'  当前文件夹下相对路径
     img1 = Image.open(imgpath1)
     photo1 = ImageTk.PhotoImage(img1)
     canvas1.create_image(350, 350, image=photo1)
 
     # 创建注册按钮
     canvas1.create_window(250, 200, window=Button(sign, width=15, bg='#d37000', text='注册',
-                                                  command=lambda: Sign_In(en1.get(), en2.get(), en3.get(), en5.get())))
+                                                  command=lambda: Sign_In(en1.get(), en2.get(), en3.get(), en4.get(),
+                                                                          en5.get())))
     canvas1.create_window(100, 200, window=Button(sign, width=15, bg='#d37000', text='发送验证码',
-                                                  command=lambda: thread_it(mail(en4.get()))))
+                                                  command=lambda: thread_it(mail(en2.get()))))
     mainloop()
 
 
